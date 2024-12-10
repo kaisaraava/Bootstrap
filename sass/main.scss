@@ -1,0 +1,22 @@
+// custom variables
+$primary: #c29938;
+$light: #697386;
+$zindex-offcanvas: 2000;
+$zindex-offcanvas-backdrop: 1035;
+
+
+
+// import the functions & variables
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+
+
+$custom-theme-colors: (
+  "altlight": #697386,
+  "altdark": #522191,
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+// import bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
